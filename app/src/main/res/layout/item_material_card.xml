@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardContainer"
+    app:cardElevation="2dp"
+    android:clickable="true"
+    android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgForCard"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginVertical="9dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_marginStart="17dp"
+                android:id="@+id/textForCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мои заказы"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgForCard"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="9dp"
+                android:layout_height="16dp"
+                android:layout_marginVertical="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:paddingHorizontal="4dp"
+                android:id="@+id/switchNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:checked="false"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
